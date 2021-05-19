@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import { useHistory } from "react-router";
-// import logo from "./undraw_secure_login_pdn4.svg";
+// import logo from "../Component/undraw_secure_login_pdn4.svg";
 import { useRouter } from "next/router";
 function Signup() {
   const [Signup, setSignup] = useState({

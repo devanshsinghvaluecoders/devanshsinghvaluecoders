@@ -1,13 +1,10 @@
 import React, { useContext, useState } from "react";
-// import logo from "./undraw_Login_re_4vu2.svg";
-// import { useHistory } from "react-router";
-// import "./Login.css";
-// import { userContext } from "../App";
+// import logo from "../Component/undraw_Login_re_4vu2.svg";
+
 import { useRouter } from "next/router";
 import { useAppContext } from "../Component/Layout";
 function Login() {
   const { setval } = useAppContext();
-  // const { state, dispatch } = useContext(userContext);
   const [Login, setLogin] = useState({
     email: "",
     password: "",

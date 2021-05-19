@@ -16,13 +16,13 @@ function About() {
         credentials: "include",
       });
       const data = await res.json();
-      setmainData(data);
-      setval(true);
 
       if (!res.status === 200) {
         const error = new Error("invaldated..........");
         throw error;
       }
+      setmainData(data);
+      setval(true);
     } catch (err) {
       console.log(err);
       router.push("/login");
