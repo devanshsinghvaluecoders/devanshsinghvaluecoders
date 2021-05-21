@@ -28,6 +28,15 @@ var user = new Schema({
     type: String,
     required: true,
   },
+  status: {
+    type: Boolean,
+    default: true,
+  },
+  type: {
+    type: String,
+    default: "customer",
+  },
+
   date: {
     type: Date,
     default: Date.now,
@@ -46,6 +55,7 @@ var user = new Schema({
         type: Number,
         required: true,
       },
+
       message: {
         type: String,
         required: true,

@@ -20,16 +20,20 @@ const handeler = async (req, res) => {
           //     expires: new Date(Date.now() + 25892000),
           //     httpOnly: true,
           //   });
-          if (isMatch) {
-            const token = await user.generateToken();
+          if (user.status === true) {
+            if (isMatch) {
+              const token = await user.generateToken();
 
-            cookies.set("jwtverify", token, {
-              expires: new Date(Date.now() + 25892000),
-              httpOnly: true,
-            });
-            res.json({ message: "login successful" });
+              cookies.set("jwtverify", token, {
+                expires: new Date(Date.now() + 25892000),
+                httpOnly: true,
+              });
+              res.json({ message: "login successful" });
+            } else {
+              res.json({ error: "invalid credential" });
+            }
           } else {
-            res.json({ error: "invalid credential" });
+            res.json({ error: "user deactive" });
           }
         } else {
           res.json({ error: "invalid credential" });
