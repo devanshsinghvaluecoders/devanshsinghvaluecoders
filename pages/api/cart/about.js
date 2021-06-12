@@ -1,6 +1,6 @@
-import DB from "../../Component/middleware/conn";
+import DB from "../../../Component/middleware/conn";
 import jwtoken from "jsonwebtoken";
-import User from "../../Component/middleware/UserSchema";
+import User from "../../../Component/middleware/UserSchema";
 import Cookies from "cookies";
 
 const handeler = async (req, res) => {

@@ -1,10 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import DB from "../../Component/middleware/conn";
-import User from "../../Component/middleware/UserSchema";
+import DB from "../../../Component/middleware/conn";
+import User from "../../../Component/middleware/UserSchema";
 import bcrypt from "bcryptjs";
 import Cookies from "cookies";
 const handeler = async (req, res) => {
   if (req.method == "DELETE") {
+    /**
+     * @swagger
+     * /api/cart/delete:
+     *   delete:
+     *     description: Returns the hello world
+     *     responses:
+     *       200:
+     *         description: hello world
+     */
     const { _id } = req.body;
     // const { _id } = req.param.id;
     // const _id = "609f62c8e71b2a286cfc3135";

@@ -2,7 +2,20 @@ import DB from "../../Component/middleware/conn";
 import jwtoken from "jsonwebtoken";
 import User from "../../Component/middleware/UserSchema";
 import Cookies from "cookies";
-
+/*
+ * @file: get-list.js
+ * @description: It Contain get admin dashboard router/api.
+ * @author: Taniya
+ */
+/**
+ * @swagger
+ * /api/data:
+ *   get:
+ *     description: Returns the hello world
+ *     responses:
+ *       200:
+ *         description: hello world
+ */
 const handeler = async (req, res) => {
   const cookies = new Cookies(req, res);
   if (req.method == "GET") {

@@ -18,13 +18,19 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.9",
+    "multer": "^1.4.2",
     "next": "10.2.0",
     "next-api-url": "^1.0.0",
+    "next-connect": "^0.10.1",
+    "next-swagger-doc": "^0.1.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-redux": "^7.2.4",
     "reactjs-popup": "^2.0.4",
     "redux": "^4.1.0",
+    "swagger-jsdoc": "6.0.0",
+    "swagger-ui-express": "^4.1.6",
+    "swagger-ui-react": "^3.50.0",
     "swr": "^0.5.6"
   }
 }
